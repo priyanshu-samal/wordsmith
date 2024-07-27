@@ -9,6 +9,7 @@ import { UserSubscription } from '@/utils/Schema';
 import { useUser } from '@clerk/nextjs';
 import moment from 'moment';
 import { UserSubscriptionContext } from '@/app/(context)/TotalUsageSubscription';
+import Script from 'next/script';
 
 const Page = () => {
   const [loading, setLoading] = useState(false);
@@ -67,7 +68,10 @@ const Page = () => {
 
   return (
     <div className="flex items-center justify-center h-screen bg-[#1E1E1E]">
-      <script src='https://checkout.razorpay.com/v1/checkout.js'></script>
+     <Script
+      src='https://checkout.razorpay.com/v1/checkout.js'
+      strategy="lazyOnload"
+    />
       <div className="bg-[#D4D0CD] p-10 shadow-2xl rounded-lg w-1/2 h-3/4 flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300 ease-in-out">
         <h1 className="text-5xl font-extrabold mb-4 text-gray-800">Premium Subscription</h1>
         <p className="text-lg mb-8 text-center text-gray-600">

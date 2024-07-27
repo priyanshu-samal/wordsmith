@@ -2,10 +2,11 @@
 
 import React, { useState } from 'react';
 import { TEMPLATE } from '../../_components/TemplateListSection';
-import { Image, Loader2Icon } from 'lucide-react'; // Ensure Image is correctly imported or use <img> if not from lucide-react
+import {  Loader2Icon } from 'lucide-react'; // Ensure Image is correctly imported or use <img> if not from lucide-react
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 interface FORM_DATA {
     [key: string]: string; // Or use a more specific type if you know the form fields
@@ -18,6 +19,7 @@ interface PROPS {
 }
 
 const FormSection = ({ SelectedTemplate, userFormInput, loading }: PROPS) => {
+    
     const [formData, setFormData] = useState<FORM_DATA>({});
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -33,10 +35,10 @@ const FormSection = ({ SelectedTemplate, userFormInput, loading }: PROPS) => {
 
     return (
         <div className='p-5 bg-white shadow-md border rounded-lg'>
-            <img
+            <Image
                 width={70}
                 height={70}
-                src={SelectedTemplate?.icon}
+                src={SelectedTemplate!.icon}
                 alt='icon'
             />
             <h2 className='font-bold text-2xl mb-2 text-blue-700'>{SelectedTemplate?.name}</h2>

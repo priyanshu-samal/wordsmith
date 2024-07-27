@@ -18,18 +18,14 @@ const UsageTrack = () => {
     const [maxWords,setMaxWords]=useState(10000)
     const{updateCreditUsage,setCreditUsage}=useContext(UpdateCreditUsage)
     
-  useEffect(() => {
-    if (user) {
-      GetData()
-      IsUserSubscribe()
-    }
-  }, [user]) 
-
-  useEffect(() => {
-    if (user) {
-      GetData()
-    }
-  }, [updateCreditUsage, user]) 
+    useEffect(() => {
+      user && GetData();
+      user && IsUserSubscribe();
+    }, [user]);
+    
+    useEffect(() => {
+      user && GetData();
+    }, [updateCreditUsage && user]);
 
 
    const GetData=async()=>{
