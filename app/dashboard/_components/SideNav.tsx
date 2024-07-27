@@ -4,6 +4,7 @@ import { FileClock, Home, Settings, WalletCards } from 'lucide-react'
 import { usePathname, useRouter } from 'next/navigation'
 import React, { useEffect } from 'react'
 import UsageTrack from './UsageTrack'
+import Image from 'next/image'
 
 const SideNav = () => {
   const router = useRouter()
@@ -39,7 +40,7 @@ const SideNav = () => {
   return (
     <div className='h-screen relative p-5 shadow-sm border bg-white'>
       <div className='flex justify-center'>
-        <img width={120} height={100} src="/logo.svg" alt="" />
+        <Image width={120} height={100} src="/logo.svg" alt="" />
       </div>
       <hr className='my-6 border' />
       <div className='mt-3 '>
