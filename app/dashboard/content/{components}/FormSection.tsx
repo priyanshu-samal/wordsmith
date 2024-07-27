@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 
 interface FORM_DATA {
-    [key: string]: string; // Or use a more specific type if you know the form fields
+    [key: string]: string; 
 }
 
 interface PROPS {
