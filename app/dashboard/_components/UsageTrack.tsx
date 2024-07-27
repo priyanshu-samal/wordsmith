@@ -20,6 +20,7 @@ const UsageTrack = () => {
     const GetData = useCallback(async () => {
         try {
             const result: HISTORY[] = await db.select().from(AIOutput)
+            //@ts-ignore 
                 .where(eq(AIOutput.createdBy, user?.primaryEmailAddress?.emailAddress));
             getTotalUsage(result);
         } catch (error) {
@@ -30,6 +31,7 @@ const UsageTrack = () => {
     const IsUserSubscribe = useCallback(async () => {
         try {
             const result = await db.select().from(userSubscription)
+            //@ts-ignore 
                 .where(eq(userSubscription.email, user?.primaryEmailAddress?.emailAddress));
             if (result.length > 0) {
                 setUserSubscription(true);
