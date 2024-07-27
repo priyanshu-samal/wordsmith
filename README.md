@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# WordSmith - AI-Powered Content Creation SaaS
 
-## Getting Started
+[Project Link](https://wordsmith-gilt.vercel.app)
 
-First, run the development server:
+![WordSmith Logo](public/Logo/favicon.ico.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+WordSmith is an AI-powered SaaS tool designed to help you create high-quality content effortlessly. Whether you need to generate social media threads, Instagram posts, blog articles, or LinkedIn updates, WordSmith streamlines the content creation process with cutting-edge AI technology.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Content Generation**: Create engaging threads, Instagram posts, blog articles, and LinkedIn updates.
+- **User-Friendly Interface**: Intuitive design with seamless navigation.
+- **AI-Powered Suggestions**: Get intelligent content recommendations and improvements.
+- **Comprehensive Dashboard**: Manage your content and track your progress effectively.
+- **Secure Login**: Robust user authentication and account management.
+- **Billing and Settings**: Manage your subscription and customize app settings.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies Used
 
-## Learn More
+### Next.js
+- **Description**: Framework for server-side rendering and static site generation with React.
+- **Usage**: Powers the frontend of WordSmith for a fast and dynamic user experience.
 
-To learn more about Next.js, take a look at the following resources:
+### Tailwind CSS
+- **Description**: Utility-first CSS framework for creating custom designs.
+- **Usage**: Provides styling for a responsive and visually appealing interface.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### TypeScript
+- **Description**: Superset of JavaScript that adds static typing.
+- **Usage**: Enhances code quality and maintainability.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Gemini
+- **Description**: AI tool for generating and enhancing content.
+- **Usage**: Powers the content generation features in WordSmith.
 
-## Deploy on Vercel
+### Clerk
+- **Description**: Authentication and user management service.
+- **Usage**: Handles user sign-up, login, and account management.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### PostgreSQL
+- **Description**: Open-source relational database system.
+- **Usage**: Stores application data securely and efficiently.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Drizzle ORM
+- **Description**: ORM for managing database interactions.
+- **Usage**: Simplifies database operations and queries.
+
+## Screenshots
+
+### Homepage
+![Homepage Screenshot](public/readme/Home.png)
+*Overview of WordSmith's features and main dashboard.*
+
+### Login
+![Login Screenshot](public/readme/dashboard.png)
+*Login page for user authentication.*
+
+### Dashboard
+![Dashboard Screenshot 1](public/readme/dashboard.png)
+*Manage your content and view analytics.*
+
+![Dashboard Screenshot 2](public/readme/dashboard2.png)
+*Detailed dashboard with advanced features.*
+
+### Form
+![Form Screenshot](public/readme/form.png)
+*Create and customize content using our intuitive form.*
+
+### History
+![History Screenshot](public/readme/history.png)
+*Track and manage your previous content.*
+
+### Billing
+![Billing Screenshot](public/readme/billing.png)
+*Manage your subscription and billing information.*
+
+### Settings
+![Settings Screenshot](public/readme/setting.png)
+*Customize your application settings.*
+
+## API Documentation
+*Detailed view of our API endpoints and their usage.*
+
+Thank you for choosing WordSmith! We’re here to help you create outstanding content with ease.
+
+![API Documentation](link_to_api_documentation_image)
+*Detailed view of our API endpoints and their usage.*
+
+Thank you for choosing WordSmith! We’re here to help you create outstanding content with ease.
